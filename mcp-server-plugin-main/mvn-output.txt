@@ -1,0 +1,85 @@
+﻿[INFO] Scanning for projects...
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:pom:3.1802.v14f4709445a_b_ is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [incrementals (https://repo.jenkins-ci.org/incrementals/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:pom:3.1802.v14f4709445a_b_ is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [incrementals (https://repo.jenkins-ci.org/incrementals/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[WARNING] The POM for org.jenkins-ci.tools:maven-hpi-plugin:jar:3.1802.v14f4709445a_b_ is missing, no dependency information available
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:jar:3.1802.v14f4709445a_b_ is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [incrementals (https://repo.jenkins-ci.org/incrementals/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:jar:3.1802.v14f4709445a_b_ is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [incrementals (https://repo.jenkins-ci.org/incrementals/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[WARNING] Failed to build parent project for io.jenkins.plugins:mcp-server:hpi:0.999999-SNAPSHOT
+[INFO] 
+[INFO] -------------------< io.jenkins.plugins:mcp-server >--------------------
+[INFO] Building MCP Server Plugin 0.999999-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ hpi ]---------------------------------
+[INFO] 
+[INFO] --- hpi:3.1802.v14f4709445a_b_:validate (default-validate) @ mcp-server ---
+[INFO] 
+[INFO] --- hpi:3.1802.v14f4709445a_b_:validate-hpi (default-validate-hpi) @ mcp-server ---
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (display-info) @ mcp-server ---
+[INFO] Rule 0: io.jenkins.tools.incrementals.enforcer.RequireExtensionVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 2: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[WARNING] Rule 3: org.apache.maven.enforcer.rules.version.RequireJavaVersion warned with message:
+A Java LTS release is recommended to build this plugin (JDK 17, 21, or 25).
+[INFO] Rule 4: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] Rule 5: org.codehaus.mojo.extraenforcer.dependencies.EnforceBytecodeVersion passed
+[INFO] Rule 6: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+[INFO] Rule 7: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+[INFO] Rule 8: org.apache.maven.enforcer.rules.dependency.RequireUpperBoundDeps passed
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (no-snapshots-in-release) @ mcp-server ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.RequireReleaseDeps passed
+[INFO] 
+[INFO] --- localizer:1.31:generate (default) @ mcp-server ---
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (check-junit-imports) @ mcp-server ---
+[INFO] Rule 0: org.apache.maven.plugins.enforcer.RestrictImports passed
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (check-commons-lang-imports) @ mcp-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ mcp-server ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- flatten:1.7.3:flatten (flatten) @ mcp-server ---
+[INFO] Generating flattened POM of project io.jenkins.plugins:mcp-server:hpi:0.999999-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ mcp-server ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 29 source files with javac [debug parameters release 17] to target\classes
+[WARNING] unknown enum constant javax.annotation.meta.When.ALWAYS
+  reason: class file for javax.annotation.meta.When not found
+[WARNING] /C:/Users/hatta/OneDrive/Bureau/mcp-server-plugin-main/mcp-server-plugin-main/src/main/java/io/jenkins/plugins/mcp/server/extensions/DefaultMcpServer.java:[104,9] Generating equals/hashCode implementation but without a call to superclass, even though this class does not extend java.lang.Object. If this is intentional, add '@EqualsAndHashCode(callSuper=false)' to your type.
+[INFO] io.jenkins.plugins.mcp.server.extensions.PipelineDiagnosticsExtension indexed under org.jenkinsci.plugins.variant.OptionalExtension
+[INFO] io.jenkins.plugins.mcp.server.extensions.ReadOnlyInspectionExtension indexed under org.jenkinsci.plugins.variant.OptionalExtension
+[INFO] io.jenkins.plugins.mcp.server.extensions.TestResultExtension indexed under org.jenkinsci.plugins.variant.OptionalExtension
+[INFO] io.jenkins.plugins.mcp.server.Endpoint indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.HealthEndpoint indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.McpServerShutdownListener indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.extensions.AdminMonitoringExtension indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.extensions.AdvancedInternalsExtension indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.extensions.BuildLogsExtension indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.extensions.DefaultMcpServer indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.extensions.DeveloperProductivityExtension indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.extensions.JobScmExtension indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.extensions.PipelineGraphExtension indexed under hudson.Extension
+[INFO] io.jenkins.plugins.mcp.server.extensions.ScmDeepDiveExtension indexed under hudson.Extension
+[INFO] /C:/Users/hatta/OneDrive/Bureau/mcp-server-plugin-main/mcp-server-plugin-main/src/main/java/io/jenkins/plugins/mcp/server/extensions/DefaultMcpServer.java:[106,23] Generating io/jenkins/plugins/mcp/server/extensions/DefaultMcpServer/MCPCause.javadoc
+[WARNING] unknown enum constant javax.annotation.meta.When.ALWAYS
+  reason: class file for javax.annotation.meta.When not found
+[WARNING] unknown enum constant javax.annotation.meta.When.ALWAYS
+  reason: class file for javax.annotation.meta.When not found
+[WARNING] unknown enum constant javax.annotation.meta.When.ALWAYS
+  reason: class file for javax.annotation.meta.When not found
+[WARNING] unknown enum constant javax.annotation.meta.When.ALWAYS
+  reason: class file for javax.annotation.meta.When not found
+[INFO] /C:/Users/hatta/OneDrive/Bureau/mcp-server-plugin-main/mcp-server-plugin-main/src/main/java/io/jenkins/plugins/mcp/server/extensions/AdvancedInternalsExtension.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/hatta/OneDrive/Bureau/mcp-server-plugin-main/mcp-server-plugin-main/src/main/java/io/jenkins/plugins/mcp/server/extensions/AdvancedInternalsExtension.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/Users/hatta/OneDrive/Bureau/mcp-server-plugin-main/mcp-server-plugin-main/src/main/java/io/jenkins/plugins/mcp/server/extensions/DefaultMcpServer.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/hatta/OneDrive/Bureau/mcp-server-plugin-main/mcp-server-plugin-main/src/main/java/io/jenkins/plugins/mcp/server/extensions/DefaultMcpServer.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.604 s
+[INFO] Finished at: 2026-05-12T22:22:25+01:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+{
+  "java.configuration.maven.userSettings": "",
+  "maven.excludedFolders": [],
+  "java.compile.nullAnalysis.mode": "disabled",
+  "java.project.referencedLibraries": [],
+"maven.terminal.useJavaHome": true,
+"java.configuration.updateBuildConfiguration": "automatic"
+}
